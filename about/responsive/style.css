@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Ojuju", sans-serif;
+}
+
+.about{
+    height: 100vh; /* Change to auto to allow content to dictate height */
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative; /* Ensure positioning works correctly */
+}
+
+.left, .right{
+    width: 3px;
+    background-color: #ffa260;
+    position: absolute;
+    top: 5rem; /* Adjust based on your design */
+    bottom: 5rem; /* Adjust based on your design */
+}
+
+.left{
+    left: 5%; /* Adjust based on your design */
+}
+
+.right{
+    right: 5%; /* Adjust based on your design */
+}
+
+.up, .down{
+    width: 40%;
+    height: 1px;
+    background-color: #ffa260;
+    border: 1px solid #ffa260;
+    position: absolute;
+}
+
+.up{
+    top: 4.5rem; /* Adjust based on your design */
+    left: 5%; /* Adjust based on your design */
+}
+
+.down{
+    bottom: 4.5rem; /* Adjust based on your design */
+    right: 5%; /* Adjust based on your design */
+}
+
+.pic {
+    position: absolute;
+    left: 10%; /* Adjust based on your design */
+    top: 7%; /* Adjust based on your design */
+}
+
+.pic img{
+    width:14rem;
+}
+
+.text{
+    color: white;
+    max-width: 900px;
+    text-align:start;
+    padding-left: 30%; /* Adjust based on your design */
+    padding-right: 5%; /* Adjust based on your design */
+    padding-top: 7%;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+span{
+    color: #ffa260;
+}
+
+button{
+    height:40px;
+    width:100px;
+    position: absolute;
+    bottom: 8%; /* Adjust based on your design */
+    left: 30%; /* Adjust based on your design */
+    background:none;
+    color: #ffa260;
+    border:2px solid;
+    transition: all 0.2s;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+    font-family: "Ojuju", sans-serif;
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor:pointer;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .pic img {
+        width: 10rem;
+        
+    }
+
+    .text{
+        font-size: 12px;
+        padding-top: 10%;
+    }
+
+    .pic {
+        top: 20%;
+    }
+
+    button{
+        position: relative;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .text{
+        text-align: center;
+        padding-left: 40px;
+        padding-top: 15%;
+    }
+
+    .pic img{
+        display: none;
+    }
+
+    .left, .right {
+        display: none; /* Hide left and right lines on smaller screens */
+    }
+
+    .up, .down {
+        width: 80%; /* Make horizontal lines wider on smaller screens */
+        left: 10%; /* Adjust based on your design */
+    }
+
+    button{
+        left: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left, .right {
+        display: none; /* Hide left and right lines on smaller screens */
+    }
+    .up, .down {
+        width: 80%; /* Make horizontal lines wider on smaller screens */
+        left: 10%; /* Adjust based on your design */
+    }
+    .pic {
+        position: static; /* Reset position for smaller screens */
+        margin-bottom: 2rem; /* Add margin between image and text on smaller screens */
+        text-align: center; /* Center image on smaller screens */
+    }
+    .text {
+        padding-left: 10%; /* Adjust padding for text on smaller screens */
+        padding-right: 10%; /* Adjust padding for text on smaller screens */
+        font-size: 14px;
+    }
+    button{
+        left: 43%;
+        top:2%;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .text{
+        font-size: 12px;
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .text{
+        font-size: 12px;
+        
+    }
+
+    button{
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+/* @media screen and (max-width: 440px) {
+    .text{
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .up, .down{
+        display: none;
+    }
+
+    .text{
+        font-size: 10px;
+       
+    }
+} */
+
+@media screen and (max-width: 440px){
+    .text{
+        font-size: 10px;
+        padding-top:30%;
+    }
+
+    .up, .down{
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 210px){
+    .text{
+        padding-top:0;
+    }
+}
