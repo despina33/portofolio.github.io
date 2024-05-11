@@ -189,15 +189,7 @@ button:hover {
 
 
 
-/* @media screen and (min-width: 664px) and (min-height:322px){
-    .about{
-        font-size: 2vh;
-    }
 
-    .pic img{
-        height: 80vh;
-    }
-} */
 
 
 @media screen and (min-width: 664px) and (max-width: 1084px) {
