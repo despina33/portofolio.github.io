@@ -143,7 +143,11 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 376px) and (max-height: 770px){
+    .up, .down, .left, .right{
+        display: none;
+    }
+
     .about{
         font-size: 9px;
     }
@@ -162,11 +166,26 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 375px) and (max-height: 770px){
-    .up, .down, .left, .right{
-        display: none;
+/* @media screen and (max-width: 360px){
+    .about{
+        font-size: 9px;
     }
-}
+
+    .pic img{
+        width: 6rem;
+        padding-left: 2rem;
+    }
+
+    .text{
+        padding-right: 2rem;
+    }
+
+    .container{
+        gap: 5%;
+    }
+} */
+
+
 
 
 
