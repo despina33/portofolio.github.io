@@ -192,7 +192,7 @@ button:hover {
 
 
 
-@media screen and (min-width: 664px) and (max-width: 1084px) {
+/* @media screen and (min-width: 664px) and (max-width: 1084px) {
     .about{
         font-size: 14px;
     }
@@ -201,6 +201,6 @@ button:hover {
         width: 8rem;
         height: 60vh;
     }
-}
+} */
 
 
