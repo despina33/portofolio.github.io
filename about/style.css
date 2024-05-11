@@ -143,7 +143,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 391px){
     .up, .down, .left, .right{
         display: none;
     }
